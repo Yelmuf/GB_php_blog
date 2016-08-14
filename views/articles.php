@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Мой Первый Блог</title>
+<title>Мой Первый Бл*г</title>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 </head>
 <body>
 <div class="container">
-<h1>Мой первый блог</h1>
+<h1>Мой первый бл*г</h1>
     <div>
     <div class="article">
       <?php foreach($articles as $a): ?>
@@ -20,8 +20,8 @@
         </div>
     </div>
     <footer>
-        <p>Мой Первый Блог<br>
-            Copyright &copy; 2016</p>
+        <p class="text-center">Слил over 20 php файлов в кучу<br/> - сделал страничку
+          <br>Copyleft &copy; 2016</p>
         </footer>
     </div>
 </body>

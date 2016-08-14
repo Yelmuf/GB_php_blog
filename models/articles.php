@@ -1,16 +1,36 @@
 <?php
-function articles_all()
+
+function articles_all($link)
 {
-  $art1 = array("id"=>1, "title"=>"Title 1", "date"=>"2015-08-31", "content"=>"Content 1");
-  $art2 = array("id"=>2, "title"=>"Title 2", "date"=>"2015-08-30", "content"=>"Content 2");
-  $arr[0] = $art1;
-  $arr[1] = $art2;
-  return $arr;
+  // Запрос
+  $query = "SELECT * FROM articles ORDER BY id DESC";
+  $result = mysqli_query($link, $query);
+
+  if (!$result)
+    die(mysqli_error($link));
+
+  // Извлечение данных из базы
+  $n = mysqli_num_rows($result);
+  $articles = array();
+  for ($i=0; $i < $n; $i++) {
+    $row = mysqli_fetch_assoc($result);
+    $articles[] = $row;
+  }
+
+  return $articles;
 }
 
-function articles_get($id)
+function articles_get($link, $id)
 {
-  return array("id"=>1, "title"=>"Это простой заголовок", "date"=>"2015-08-30", "content"=>"Здесь будет статья");
+  $query = sprintf("SELECT * FROM articles WHERE id=%d", (int)$id);
+  $result = mysqli_query($link, $query);
+
+  if (!$result)
+    die(mysqli_error($link));
+
+  // Извлечение данных из базы
+  $article = mysqli_fetch_assoc($result);
+  return $article;
 }
 
 function articles_new($title, $date, $content)
