@@ -20,8 +20,7 @@
                 <h3><a href="article.php?id=<?php echo $a['id']?>">
                     <?php echo htmlspecialchars($a['title'])?></a></h3>
                 <em> Опубликовано: <?php echo $a['date']?></em>
-                <p>
-                    <?php echo htmlspecialchars($a['content'])?>
+                <p><?php echo articles_intro(htmlspecialchars($a['content']))?>
                 </p>
                 <?php endforeach ?>
             </div>

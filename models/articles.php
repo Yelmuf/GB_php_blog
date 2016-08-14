@@ -92,3 +92,10 @@ function articles_delete($link, $id)
 
   return mysqli_affected_rows($link);
 }
+
+function articles_intro($text, $len = 150 + 150) // :D
+{
+    if(strlen($text) > $len)
+      $text = mb_substr($text, 0, $len) . "...";
+    return $text;
+}
