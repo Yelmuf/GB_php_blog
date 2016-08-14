@@ -11,7 +11,11 @@
 <body>
     <div class="container">
         <h1><a class="" href="index.php">Мой первый бл*г</a></h1>
-        <div>
+        <div class="breadcrumb">
+          <a class="btn" href="index.php">Назад</a>
+          <a class="btn pull-right" href="admin/index.php">
+            <span class="glyphicon glyphicon-tasks"></span></a>
+        </div>
             <div class="article">
                 <h3><?php echo htmlspecialchars($article['title'])?></h3>
                 <em>Опубликовано: <?php echo $article['date']?></em>
@@ -21,8 +25,7 @@
             </div>
 
         </div>
-    </div>
-    <footer class="footer">
+    <footer class="footer container-fluid">
         <p class="text-center">Слил over 20 php файлов в кучу
             <br /> - сделал страничку
             <br /> Copyleft © 2016</p>

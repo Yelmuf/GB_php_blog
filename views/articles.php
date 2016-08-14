@@ -27,7 +27,7 @@
 
 
     </div>
-    <footer class="footer">
+    <footer class="footer container-fluid">
         <p class="text-center">Слил over 20 php файлов в кучу
             <br /> - сделал страничку
             <br />Copyleft &copy; 2016</p>

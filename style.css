@@ -1,17 +1,26 @@
-.footer {
-  background-color: #76A9E5;
-  color: white;
-  padding: 20px 0 10px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
-.admin-table {
-  width: 100%;
+html, body {
+  height: 100%;
 }
 
 h1 {
   text-decoration: none;
   color: #333333;
+}
+
+.footer {
+  clear: both;
+  position: relative;
+  background-color: #76A9E5;
+  color: white;
+  padding: 20px 0 10px;
+  margin-top: -100px;
+}
+
+.container {
+  height: auto;
+  min-height: 100%;
+}
+
+.admin-table {
+  width: 100%;
 }
