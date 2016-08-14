@@ -3,14 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Мой Первый Бл*г</title>
+    <title>Бл*г</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
-        <h1><a class="" href="index.php">Мой первый бл*г</a></h1>
+        <h1><a href="index.php">Бл*г</a></h1>
         <div class="breadcrumb">
           <a class="btn" href="index.php">Назад</a>
           <a class="btn pull-right" href="admin/index.php">

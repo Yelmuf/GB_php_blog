@@ -10,7 +10,7 @@
   <body>
 
     <div class="container">
-        <h1><a class="" href="../index.php">Мой первый бл*г</a></h1>
+        <h1><a href="../index.php">Бл*г</a></h1>
 
     <div class="breadcrumb btn-toolbar">
       <a class="btn btn-primary" href="index.php?action=add">Добавить статью</a>
