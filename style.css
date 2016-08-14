@@ -10,3 +10,8 @@
 .admin-table {
   width: 100%;
 }
+
+h1 {
+  text-decoration: none;
+  color: #333333;
+}

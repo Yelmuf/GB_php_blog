@@ -10,13 +10,13 @@
 
 <body>
     <div class="container">
-        <h1>Мой первый бл*г</h1>
+        <h1><a class="" href="index.php">Мой первый бл*г</a></h1>
         <div>
             <div class="article">
-                <h3><?php echo $article['title']?></h3>
+                <h3><?php echo htmlspecialchars($article['title'])?></h3>
                 <em>Опубликовано: <?php echo $article['date']?></em>
                 <p>
-                    <?php echo $article['content']?>
+                    <?php echo htmlspecialchars($article['content'])?>
                 </p>
             </div>
 

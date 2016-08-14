@@ -11,18 +11,21 @@
 <body>
     <div class="container">
         <h1>Мой первый бл*г</h1>
-        <div>
+        <div class="breadcrumb btn-toolbar">
+          <a class="btn pull-right" href="admin/index.php">
+            <span class="glyphicon glyphicon-tasks"></span></a>
+        </div>
             <div class="article">
                 <?php foreach($articles as $a): ?>
                 <h3><a href="article.php?id=<?php echo $a['id']?>">
-                    <?php echo $a['title']?></a></h3>
+                    <?php echo htmlspecialchars($a['title'])?></a></h3>
                 <em> Опубликовано: <?php echo $a['date']?></em>
                 <p>
-                    <?php echo $a['content']?>
+                    <?php echo htmlspecialchars($a['content'])?>
                 </p>
                 <?php endforeach ?>
             </div>
-        </div>
+
 
     </div>
     <footer class="footer">
