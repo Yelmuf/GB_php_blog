@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru, en">
 
 <head>
     <meta charset="utf-8">
     <title>Мой Первый Бл*г</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -21,11 +21,12 @@
             </div>
 
         </div>
-        <footer>
-            <p class="text-center">Слил over 20 php файлов в кучу<br/> - сделал страничку
-                <br> Copyleft © 2016</p>
-        </footer>
     </div>
+    <footer class="footer">
+        <p class="text-center">Слил over 20 php файлов в кучу
+            <br /> - сделал страничку
+            <br /> Copyleft © 2016</p>
+    </footer>
 </body>
 
 </html>
