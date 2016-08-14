@@ -3,14 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Мой Первый Блог</title>
+    <title>Мой Первый Бл*г</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 </head>
 
 <body>
     <div class="container">
-        <h1>Мой первый блог</h1>
+        <h1>Мой первый бл*г</h1>
         <div>
             <div class="article">
                 <h3><?php echo $article['title']?></h3>
@@ -22,8 +22,8 @@
 
         </div>
         <footer>
-            <p>Мой Первый Блог
-                <br> Copyright © 2016</p>
+            <p class="text-center">Слил over 20 php файлов в кучу<br/> - сделал страничку
+                <br> Copyleft © 2016</p>
         </footer>
     </div>
 </body>
