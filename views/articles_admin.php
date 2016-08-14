@@ -12,10 +12,10 @@
     <div class="container">
         <h1>Мой первый бл*г</h1>
     </div>
-    <div class="breadcrumb container-fluid">
+    <div class="breadcrumb container">
       <a class="btn btn-primary" href="index.php?action=add">Добавить статью</a>
     </div>
-    <div class="container-fluid">
+    <div class="container">
       <table class="admin-table table-responsive table-condensed table-bordered table-hover">
           <tr>
             <th>Дата</th>
